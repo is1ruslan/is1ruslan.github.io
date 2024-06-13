@@ -50,7 +50,7 @@ const Hero = () => {
 
   
   return (
-    <div className="min-h-screen w-full flex justify-center items-center relative pt-10 md:pt-[80px] pb-[300px]">
+    <div className="min-h-screen w-full flex justify-center items-center relative pt-10 md:pt-[70px] pb-[150px]">
       <Image
         src="/grid.svg"
         alt="grid"
@@ -67,9 +67,9 @@ const Hero = () => {
       />
       <div className="flex flex-col items-center justify-center">
         <div className="z-[12] text-center items-center justify-center flex flex-col gap-5">
-          <h1 className="text-3xl sm:text-4xl lg:text-[46px] mb-6"><span className="text-primary">Unlock</span> the <span className="text-primary">potential</span><br /> 
+          <h1 className="text-3xl sm:text-4xl lg:text-[46px]"><span className="text-primary">Unlock</span> the <span className="text-primary">potential</span><br /> 
           of locked <span className="text-primary">liquidity</span> in DeFi</h1>
-          <button className="px-4 py-3 text-sm hover:bg-[#f8d99c] ease-linear duration-100 transition-all bg-primary gap-2 text-backingDark rounded-2xl w-fit flex items-center justify-center">
+          <button className="px-4 py-3 text-sm hover:bg-[#f8d99c] ease-linear duration-100 transition-all bg-primary gap-2 text-backingDark rounded-2xl w-fit flex items-center justify-center mt-14">
             <p>Get Started</p>
             <Image
               src="/hero/arrowright.svg"
@@ -82,7 +82,7 @@ const Hero = () => {
         <video
           width="100%"
           height="100%"
-          className="-mt-10 z-0 -mb-10 h-[400px] md:h-full object-cover md:object-contain pointer-events-none"
+          className="-mt-20 z-0 -mb-10 h-[400px] md:h-full object-cover md:object-contain pointer-events-none"
           title="Video tooltip on hover."
           poster="/pre.png"
           muted
@@ -108,8 +108,8 @@ const Hero = () => {
         />
         <div className="z-[12] grid grid-cols-1 md:grid-cols-3 px-5 gap-5 md:gap-20 mt-7 w-full">
           {[{ title: "Market Cap", value: `$${marketCap}` },
-  { title: "Token Price", value: `$${price}` },
-  { title: "Holders", value: `${holders}` }].map((el) => (
+          { title: "Token Price", value: `$${price}` },
+          { title: "Holders", value: `${holders}` }].map((el) => (
             <div
               key={el.title}
               className="py-6 w-full px-5 lg:px-20 rounded-[20px] border border-secondary bg-backingDark flex flex-col gap-2 items-center justify-center"
