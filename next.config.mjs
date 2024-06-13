@@ -8,7 +8,7 @@ export default nextConfig;
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
-  assetPrefix: isProd ? '/your-repo-name/' : '',
+  assetPrefix: isProd ? '/is1ruslan.github.io/' : '',
   images: {
     unoptimized: true,
   },
