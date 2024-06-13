@@ -8,11 +8,11 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 export default {
-    assetPrefix: isProd ? '/openliq/' : '',
+    // assetPrefix: isProd ? '/openliq/' : '',
     images: {
       unoptimized: true,
     },
     trailingSlash: true,
     output: 'export',
-    basePath: isProd ? '/openliq' : '',
+    // basePath: isProd ? '/openliq' : '',
 };
