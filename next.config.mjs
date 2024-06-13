@@ -14,4 +14,5 @@ export default {
     },
     trailingSlash: true,
     output: 'export',
+    basePath: isProd ? '/openliq' : '',
 };
