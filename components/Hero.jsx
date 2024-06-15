@@ -67,9 +67,8 @@ const Hero = () => {
       />
       <div className="flex flex-col items-center justify-center">
         <div className="z-[12] text-center items-center justify-center flex flex-col gap-5">
-          <h1 className="text-3xl sm:text-4xl lg:text-[46px]"><span className="text-primary">Unlock</span> the <span className="text-primary">potential</span><br /> 
-          of locked <span className="text-primary">liquidity</span> in DeFi</h1>
-          <button className="px-4 py-3 text-sm hover:bg-[#f8d99c] ease-linear duration-100 transition-all bg-primary gap-2 text-backingDark rounded-2xl w-fit flex items-center justify-center mt-14">
+          <h1 className="text-3xl sm:text-4xl lg:text-[46px]"><span className="text-primary">Unlock</span> the <span className="text-primary">Potential </span>of Locked <span className="text-primary">Liquidity</span></h1>
+          <button className="px-4 py-3 text-sm hover:bg-[#f8d99c] ease-linear duration-100 transition-all bg-primary gap-2 text-backingDark rounded-2xl w-fit flex items-center justify-center mt-7">
             <p>Get Started</p>
             <Image
               src="/hero/arrowright.svg"

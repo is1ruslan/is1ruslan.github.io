@@ -29,9 +29,9 @@ const Advantages = () => {
               />
             </div>
             <p className="text-2xl sm:text-[32px] bulky">
-              Pioneering{" "}
+              {/* Pioneering{" "} */}
               <span className="text-primary">Liquidity Exchange</span> in{" "}
-              Decentralized Finance
+              DeFi
             </p>
           </div>
           <p className="text-sm sm:text-base text-landingSubtext">
@@ -64,7 +64,7 @@ const Advantages = () => {
               />
             </div>
             <p className="text-2xl sm:text-[32px] bulky">
-              <span className="text-primary">Provider</span> of Advanced{" "}
+              {/* <span className="text-primary">Provider</span> of Advanced{" "} */}
               <span className="text-primary">Liquidity Locker</span> Solutions
             </p>
           </div>

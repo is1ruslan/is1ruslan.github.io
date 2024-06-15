@@ -21,7 +21,7 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 text-sm py-3 h-10 hidden sm:flex bg-[#35353580] hover:bg-[#353535] ease-linear duration-100 transition-all text-primary items-center justify-center rounded-2xl"
-        >Buy $OpenLi</a>
+        >Buy on Uniswap</a>
         <a
           href="https://linktr.ee"
           target="_blank"
