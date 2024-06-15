@@ -50,22 +50,24 @@ const WhyUs = () => {
               {el.description}
             </p>
             {el.firstText ? (
-              <div className="text-sm sm:text-base  text-maintextDark rounded-2xl flex items-center gap-3 px-0 sm:px-5 py-1 border-0 sm:border border-secondary">
-                <p className="block lg:hidden xl:block">Powered by</p>
+              <div className="text-sm sm:text-base justify-center text-maintextDark rounded-2xl flex items-center gap-3 px-0 sm:px-5 py-1 border-0 sm:border border-secondary">
+                <p className="block xl:block lg:hidden sm:text-2xl md:text-2lg lg:text-lg">Powered by</p>
                 <a
                   className="hover:scale-105 ease-linear duration-100 transition-all"
-                  href="https://kleros.world/xLiquidity-Swap-6823cc1b2f194ea688c6e36fa5d0e2f2"
+                  href="https://cryptodo.app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Image
-                    src="/whyus/kleros.svg"
+                    src="/whyus/cryptodo2.png"
                     alt="kleros"
-                    width={106}
-                    height={40}
+                    width={40}
+                    height={15}
                     className="my-3"
                   />
+                  
                 </a>
+                <p className="block xl:block sm:text-2xl md:text-2xl lg:text-lg">CryptoDo</p>
               </div>
             ) : el.secondText ? (
               <div className="text-sm min-h-[73px] justify-center sm:text-sm rounded-2xl flex  items-center gap-3 lg:gap-3 2xl:gap-6 px-0 sm:px-5 py-1 border-0 sm:border border-secondary">

@@ -15,11 +15,11 @@ export default function Home() {
       <div className="bg-backingDark rounded-xl w-full">
       <Hero />
       <Advantages />
-      <Divider gradient />
+      {/* <Divider gradient /> */}
       <div className="hidden sm:block">
-      <div className="p-[60x] z-[12] relative border border-secondary rounded-[30px] overflow-hidden">
+      {/* <div className="p-[60x] z-[12] relative border border-secondary rounded-[30px] overflow-hidden">
         <Image src="/ecosystem.svg" alt="ecosystem" width={1700} height={806} className="w-full"/>
-      </div>
+      </div> */}
       <Divider />
       </div>
       <WhyUs />

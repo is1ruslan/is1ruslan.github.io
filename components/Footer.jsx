@@ -115,7 +115,7 @@ const Footer = () => {
               <p className="text-subtextDark hover:text-maintextDark">
                 Getting Started
               </p>
-              <p className="text-subtextDark hover:text-maintextDark ">FAQ</p>
+              {/* <p className="text-subtextDark hover:text-maintextDark ">FAQ</p> */}
             </div>
             <div className="flex flex-col gap-4">
               <p className="text-primary ">Community</p>
@@ -211,11 +211,11 @@ const Footer = () => {
           <p className="text-subtextDark">©2024 OpenLiquidity</p>
           <a
             className="text-subtextDark hover:text-maintextDark"
-            href="mailto:team@openliquidiy.io"
+            href="mailto:team@openliquidity.io"
             target="_blank"
             rel="noopener noreferrer"
           >
-            team@openliquidiy.io
+            team@openliquidity.io
           </a>
         </div>
       </div>

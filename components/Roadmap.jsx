@@ -115,6 +115,35 @@ const cardArr = [
       },
     ],
   },
+  {
+    title: "Phase 06",
+    description: "Ecosystem Maturation (Q2-Q3 2024)",
+    data: [
+      {
+        id: 0,
+        title: "Product Launch:",
+        name: " Official launch of the Dapp, followed by an updated suite of documentation.",
+        success: true,
+      },
+      {
+        id: 1,
+        title: "Decentralized Governance:",
+        name: " Implementation of a DAO system and a profit distribution mechanism.",
+        success: true,
+      },
+      {
+        id: 2,
+        title: "Ecosystem Strengthening:",
+        name: " Expansion of partnerships and collaborations to further enrich our ecosystem with other leading organizations.",
+        success: true,
+      },
+      {
+        id: 3,
+        name: " Additional developments to be announced regarding collateralization, VC funding, and Locking services.",
+        success: true,
+      },
+    ],
+  },
 ];
 
 const Roadmap = () => {
@@ -123,6 +152,7 @@ const Roadmap = () => {
   const [is3Open, setIs3Open] = React.useState(false);
   const [is4Open, setIs4Open] = React.useState(false);
   const [is5Open, setIs5Open] = React.useState(false);
+  const [is6Open, setIs6Open] = React.useState(false);
 
   const onOpenClick = (i) => {
     if (i === 0) {
@@ -131,57 +161,70 @@ const Roadmap = () => {
       setIs3Open(false);
       setIs4Open(false);
       setIs5Open(false);
+      setIs6Open(false);
     } else if (i === 1) {
       setIs1Open(false);
       setIs2Open(!is2Open);
       setIs3Open(false);
       setIs4Open(false);
       setIs5Open(false);
+      setIs6Open(false);
     } else if (i === 2) {
       setIs1Open(false);
       setIs2Open(false);
       setIs3Open(!is3Open);
       setIs4Open(false);
       setIs5Open(false);
+      setIs6Open(false);
     } else if (i === 3) {
       setIs1Open(false);
       setIs2Open(false);
       setIs3Open(false);
       setIs4Open(!is4Open);
       setIs5Open(false);
+      setIs6Open(false);
     } else if (i === 4) {
       setIs1Open(false);
       setIs2Open(false);
       setIs3Open(false);
       setIs4Open(false);
       setIs5Open(!is5Open);
+      setIs6Open(false);
+    } else if (i === 5) {
+      setIs1Open(false);
+      setIs2Open(false);
+      setIs3Open(false);
+      setIs4Open(false);
+      setIs5Open(false);
+      setIs6Open(!is6Open);
     }
   };
 
   return (
     <div className="flex flex-col gap-10 items-center">
       <h2 className="text-[32px] sm:text-[46px] leading-[1]">Roadmap</h2>
-      <div className="flex gap-7 w-full justify-stretch overflow-y-auto">
-        {cardArr.map((el, i) => (
-          <div
-            onClick={() => onOpenClick(i)}
-            key={el.title}
-            className={`h-[340px] border p-7 flex ${
-              !is1Open && !is2Open && !is3Open && !is4Open
-                ? "w-1/4 min-w-[253px]"
-                : (i === 0 && is1Open) ||
-                  (i === 1 && is2Open) ||
-                  (i === 2 && is3Open) ||
-                  (i === 3 && is4Open) ||
-                  (i === 4 && is5Open)
-                ? "min-w-[253px] w-[100%]"
-                : "min-w-[253px]"
-            } flex-col gap-3 rounded-[30px] ${
-              i === 0
-                ? "bg-gradient-to-t from-secondary to-moduleDark via-moduleDark border-secondary"
-                : "bg-moduleDark border-highlightDark"
-            }`}
-          >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 w-full">
+          {cardArr.map((el, i) => (
+            <div
+              onClick={() => onOpenClick(i)}
+              key={el.title}
+              className={`h-[340px] border p-7 flex ${
+                !is1Open && !is2Open && !is3Open && !is4Open
+                  ? "w-full"
+                  : (i === 0 && is1Open) ||
+                    (i === 1 && is2Open) ||
+                    (i === 2 && is3Open) ||
+                    (i === 3 && is4Open) ||
+                    (i === 4 && is5Open) ||
+                    (i === 5 && is6Open)
+                  ? "w-full"
+                  : "w-full"
+              } flex-col gap-3 rounded-[30px] ${
+                i === 0
+                  ? "bg-gradient-to-t from-secondary to-moduleDark via-moduleDark border-secondary"
+                  : "bg-moduleDark border-highlightDark"
+              }`}
+            >
             <div className="flex justify-between gap-3 items-center">
               <h3 className="text-2xl">{el.title}</h3>
               <button
@@ -196,7 +239,8 @@ const Roadmap = () => {
                     (i === 1 && is2Open) ||
                     (i === 2 && is3Open) ||
                     (i === 3 && is4Open) ||
-                    (i === 4 && is5Open)
+                    (i === 4 && is5Open) ||
+                    (i === 5 && is6Open)
                       ? "/roadmap/open.svg"
                       : "/roadmap/close.svg"
                   }
@@ -214,7 +258,8 @@ const Roadmap = () => {
               (i === 1 && is2Open) ||
               (i === 2 && is3Open) ||
               (i === 3 && is4Open) ||
-              (i === 4 && is5Open)
+              (i === 4 && is5Open) ||
+              (i === 5 && is6Open)
             ) && (
               <div className="flex flex-col gap-3 overflow-y-auto">
                 {el.data.map((el) => (
